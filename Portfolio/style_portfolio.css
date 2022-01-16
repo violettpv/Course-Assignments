@@ -1,0 +1,239 @@
+body {
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.grid-container {
+    display: grid;
+    grid-template: 730px/ 50% 50%; /* ??? */
+    padding: 0;
+    margin: 0;
+}
+.boxOne {
+    background-color: ghostwhite;
+    text-align: center;
+    flex-flow: column;
+}
+.boxTwo {
+    background-color: #fa96a5;
+}
+.made-by {
+    position:relative;
+    height: 20px;
+    font-size: 12px;
+    font-family: Bahnschrift sans-serif;
+}
+
+/*#region Links_and_SideNav*/
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+.menu-button {
+    position: relative; /* -- about position--*/
+    left: 680px; /* -- ??? --*/
+    top: 20px;
+    font-size: 60px;
+    color: rgba(255, 233, 243, 0.7);
+    border: none;
+    background-color: transparent;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /*z-index: 1;*/
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 233, 243, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: palevioletred;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.sidenav a:hover {
+    color: #8c2c57;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+/*#endregion Links_and_SideNav*/
+
+/*#region MainPage*/
+.pic {
+    height: 600px;
+    width: 450px;
+    border-radius: 20px;
+}
+.box-text {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.main-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+}
+.main-text {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.greetings {
+    font-size: 50px;
+    font-family: "Segoe UI", serif;
+    font-weight: bold;
+    color: #de6680;
+}
+.qualification {
+    font-size: 35px;
+    font-family: "Segoe UI", serif;
+    font-weight: bold;
+    color: #bd4061;
+    text-transform: uppercase;
+}
+.buttons-main {
+    display: flex;
+}
+.more-about, .contact-me {
+    padding: 15px;
+    margin: 5px;
+    width: 140px;
+    height: 20px;
+    background-color: #fa96a5;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+}
+/*#endregion MainPage*/
+
+/*#region ContactMePage*/
+.div-contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.contact-pic {
+    width: 520px;
+    height: 250px;
+}
+.facebook, .instagram {
+    width: 120px;
+    height: 120px;
+    margin: 12px;
+}
+.email {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    background-color: ghostwhite;
+    border-radius: 10px;
+    color: #8c2c57;
+    padding: 10px;
+    margin: 12px;
+}
+.media-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10%;
+}
+/*#endregion ContactMePage*/
+
+/*#region WorkPage */
+.text {
+    overflow-wrap: normal;
+    padding: 75px;
+    font-size: 17px;
+    font-family: Arial, serif;
+    color: #8c2c57;
+}
+.github {
+    width: 100px;
+    height: 100px;
+    margin: 10%;
+}
+.lines {
+    width: 200px;
+    height: 200px;
+    margin-left: 7%;
+    margin-top: 0;
+}
+.wheatley {
+    width: 350px;
+    height: 170px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.work-pics {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/*#endregion WorkPage */
+
+/*#region MoreAboutPage */
+.container-more-about {
+    display: flex;
+    justify-content: center;
+}
+.box-more-about {
+    display: flex;
+    flex-direction: column;
+}
+.div-more-about {
+    text-align: left;
+    padding: 20px;
+    font-size: 16px;
+    font-family: Arial, serif;
+    color: #8c2c57;
+}
+.my-photo {
+    height: 600px;
+    width: 400px;
+    border-radius: 20px;
+}
+.photo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+/*#endregion MoreAboutPage */

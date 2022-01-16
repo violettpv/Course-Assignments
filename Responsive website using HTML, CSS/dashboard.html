@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="style-profile-page.css">
+    <link rel="stylesheet" href="scaling-profile-page.css">
+</head>
+<body>
+
+<div class="page-flex">
+    <nav class="side-nav" id="side-bar">
+        <div style="display: flex; justify-content: left; margin: 15px;">
+            <p id="menu-company" style="color: #444444; font-weight: bold; font-size: 18px; margin: 4px;">Company</p>
+            <span class="close-menu" onclick="closeNav()">&times;</span>
+        </div>
+        <hr id="hr-menu" style="width: auto; height:1px; border-width:0; background-color:#b6b6b6">
+
+        <div class="menu-list">
+            <p class="menu-item current-page"><img class = "img-nav" src="icons5/dashboard_white.svg" alt=""><a href="dashboard.html">Dashboard</a></p>
+            <p class="menu-item"><img class = "img-nav" src="icons5/account_gray.svg" alt=""><a href="userProfile.html">User Profile</a></p>
+            <p class="menu-item"><img class = "img-nav" src="icons5/map_gray.svg" alt="">Maps</p>
+            <p class="menu-item"><img class = "img-nav" src="icons5/notify_gray.svg" alt="">Notification</p>
+            <p class="menu-item"><img class = "img-nav" src="icons5/support_gray.svg" alt="">Support</p>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="page-header">
+            <img src="icons5/sidebar.png" alt="" onclick="openNav()" class="menu-ico" style="margin-right: 10px;">
+            <div class="page-name">Dashboard</div> 
+        </div>
+        
+
+<!--BLOCK ONE-->
+        <div class="block-one">
+            <div class="box-one">
+                <div class="pic-block-one pic-block-one-green"><img src="icons5/data_white.svg" alt=""></div>
+                <div class="box-one-content">
+                    <div class="box-text" style="font-size: 10px; margin-bottom: 3px;">Used space</div>
+                    <div class="box-text" style="font-size: 18px; margin-top: 5px; margin-bottom: 10px;">49/50 GB</div>
+                </div>
+                <div class="box-one-end">
+                    <hr style="height:1px; border-width:0; background-color:gray">
+                    <div class="box-footer" style="margin: 10px 10px 0 10px; display: flex; align-items: center;">
+                        <img style="height: 15px; width: 15px; margin-right: 5px; display: flex; align-items: center;" src="icons5/alert.png" alt="">
+                        Get more space</div>
+                </div>
+            </div>
+
+            <div class="box-two">
+                <div class="pic-block-one pic-block-one-yellow"><img src="icons5/shop_white.svg" alt=""></div>
+                <div class="box-two-content">
+                    <div class="box-text" style="font-size: 10px; margin-bottom: 3px;">Revenue</div>
+                    <div class="box-text" style="font-size: 18px; margin-top: 5px; margin-bottom: 10px;">$ 34,245</div>
+                </div>
+                <div class="box-two-end">
+                    <hr style="height:1px; border-width:0; background-color:gray">
+                    <div class="box-footer" style="margin: 10px 10px 0 10px; display: flex; align-items: center;">
+                        <img style="height: 15px; width: 15px; margin-right: 5px; display: flex; align-items: center;" src="icons5/calendar.png" alt="">
+                        Last 24 hours</div>
+                </div>
+            </div>
+
+            <div class="box-three">
+                <div class="pic-block-one pic-block-one-blue"><img src="icons5/tag_white.svg" alt=""></div>
+                <div class="box-three-content">
+                    <div class="box-text" style="font-size: 10px; margin-bottom: 3px;">Fixed issues</div>
+                    <div class="box-text" style="font-size: 18px; margin-top: 5px; margin-bottom: 10px;">75</div>
+                </div>
+                <div class="box-three-end">
+                    <hr style="height:1px; border-width:0; background-color:gray">
+                    <div class="box-footer" style="margin: 10px 10px 0 10px; display: flex; align-items: center;">
+                        <img style="height: 15px; width: 15px; margin-right: 5px; display: flex; align-items: center;" src="icons5/down.png" alt="">
+                        Tracked from GitHub</div>
+                </div>
+            </div>
+
+            <div class="box-four">
+                <div class="pic-block-one pic-block-one-pink"><img src="icons5/paperplane_white.svg" alt=""></div>
+                <div class="box-four-content">
+                    <div class="box-text" style="font-size: 10px; margin-bottom: 3px;">Followers</div>
+                    <div class="box-text" style="font-size: 18px; margin-top: 5px; margin-bottom: 10px;">+ 245</div>
+                </div>
+                <div class="box-four-end">
+                    <hr style="height:1px; border-width:0; background-color:gray">
+                    <div class="box-footer" style="margin: 10px 10px 0 10px; display: flex; align-items: center;">
+                        <img style="height: 15px; width: 15px; display: flex; align-items: center; margin-right: 5px;" src="icons5/time.png" alt="">
+                        Just updated</div>
+                </div>
+            </div>
+        </div>
+
+<!--BLOCK TWO-->
+        <div class="block-two">
+            <div class="chart-box-one">
+                <div class="chart-pic chart-pic-green"><img src="icons5/graphics.svg" class="chart-pic-block-two" alt=""></div>
+                <div class="b2-align-text">
+                    <div class="chart-box-1-content">
+                        <p class="b2-content-font-top">Daily Sales</p>
+                        <p class="b2-content-font-bottom">55% increase in today sales</p>
+                    </div>
+
+                    <div class="chart-box-1-end">
+                        <hr style="height:1px; border-width:0; background-color:gray;">
+                        <p class="chart-box-footer" style="font-size: 10px; margin-top: 10px; margin-bottom: 10px; display: flex; align-items: center;">
+                            <img src="icons5/time.png" alt="" style="height: 15px; width: 15px; margin-right: 5px; display: flex; align-items: center;">
+                            updated 4 minutes ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-box-two">
+                <div class="chart-pic chart-pic-yellow"><img src="icons5/graphics.svg" class="chart-pic-block-two" alt=""></div>
+                <div class="b2-align-text">
+                    <div class="chart-box-2-content">
+                        <p class="b2-content-font-top">Email Subscription</p>
+                        <p class="b2-content-font-bottom">Last Campaign Performance</p>
+                    </div>
+
+                    <div class="chart-box-2-end">
+                        <hr style="height:1px; border-width:0; background-color:gray">
+                        <p class="chart-box-footer" style="font-size:10px; margin-top: 10px; margin-bottom: 10px; display: flex; align-items: center;">
+                            <img src="icons5/time.png" alt="" style="height: 15px; width: 15px; margin-right: 5px; display: flex; align-items: center;">
+                            campaign sent 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-box-three">
+                <div class="chart-pic chart-pic-blue"><img src="icons5/graphics.svg" class="chart-pic-block-two" alt=""></div>
+                    <div class="b2-align-text">
+                        <div class="chart-box-3-content">
+                            <p class="b2-content-font-top">Completed Tasks</p>
+                            <p class="b2-content-font-bottom">Last Campaign Performance</p>
+                        </div>
+
+
+                        <div class="chart-box-3-end">
+                        <hr style="height:1px; border-width:0; background-color:gray">
+                        <p class="chart-box-footer" style="font-size:10px; margin-top: 10px; margin-bottom: 10px; display: flex; align-items: center;">
+                            <img src="icons5/time.png" alt="" style="height: 15px; width: 15px; margin-right: 5px; display: flex; align-items: center;">
+                            campaign event 2 days ago</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+<!--BLOCK THREE-->
+        <div class="block-three">
+            <div class="b3-one">
+                <div class="b3-header-one">
+                    <div class="b3-h-buttons">
+                        <div class="b3-header-margin">Tasks:</div>
+                        <div class="b3-header-margin"><img class="b3-header-pic" src="icons5/bug.svg" alt="">Bugs</div>
+                        <div class="b3-header-margin"><img class="b3-header-pic" src="icons5/web.svg" alt="">Website</div>
+                        <div class="b3-header-margin"><img class="b3-header-pic" src="icons5/cloud.svg" alt="">Service</div>
+                    </div>
+                </div>
+
+                <div class="b3-box-content-one">
+                    <div class="b3-item">
+                        <input type="checkbox">
+                        <span>Sign contract for "hat are conference organizers afraid of?"</span>
+                        <img class="edit-remove" style="margin-left: auto;" src="icons5/edit.png" alt="">
+                        <img class="edit-remove" src="icons5/remove.png" alt="">
+                    </div>
+                    <hr style="height:1px; border-width:0; background-color:gray;">
+                    <div class="b3-item">
+                        <input type="checkbox">
+                        <span>Lines From Great Russian Literature? Or E-Mails From My Boss?</span>
+                        <img class="edit-remove" style="margin-left: auto;" src="icons5/edit.png" alt="">
+                        <img class="edit-remove" src="icons5/remove.png" alt="">
+                    </div>
+                    <hr style="height:1px; border-width:0; background-color:gray;">
+                    <div class="b3-item">
+                        <input type="checkbox">
+                        <span>Sign contract for "What are conference organizers afraid of?"</span>
+                        <img class="edit-remove" style="margin-left: auto;" src="icons5/edit.png" alt="">
+                        <img class="edit-remove" src="icons5/remove.png" alt="">
+                    </div>
+                    <hr style="height:1px; border-width:0; background-color:gray;">
+                    <div class="b3-item">
+                        <input type="checkbox">
+                        <span>Sign contract for "hat are conference organizers afraid of?"</span>
+                        <img class="edit-remove" style="margin-left: auto;" src="icons5/edit.png" alt="">
+                        <img class="edit-remove" src="icons5/remove.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="b3-two">
+                <div class="b3-header-two">
+                    <p>Employees Stats</p>
+                    <p>New employees on 19th September, 2019</p>
+                </div>
+                <div class="b3-box-content-two">
+                    <table class="b3-table-one">
+                        <tr style="color: #5de1da;">
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Salary</th>
+                            <th>Country</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Dakota Rice</td>
+                            <td>$36.738</td>
+                            <td>Niger</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Dakota Rice</td>
+                            <td>$36.738</td>
+                            <td>Niger</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Dakota Rice</td>
+                            <td>$36.738</td>
+                            <td>Niger</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Dakota Rice</td>
+                            <td>$36.738</td>
+                            <td>Niger</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div style="">
+                <hr style="width: 100%; height:1px; border-width:0; background-color:#adadad;">
+            </div>
+            <div style="display: flex; align-content: center;">
+                <div class="links-footer">
+                    <div>About</div>
+                    <div>Blog</div>
+                    <div>Licenses</div>
+                </div>
+
+                <div class="made-by">2019 - made with love</div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<script src="company.js"></script>
+</body>
+</html>

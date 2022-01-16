@@ -1,0 +1,121 @@
+@media screen and (max-width: 1000px) {
+    .page-items {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    html, body {
+        height: fit-content;
+    }
+
+    /* bio block */
+    .info-block {
+        margin: 20px 0 45px 0;
+        width: 80%;
+        height: 230px;
+    }
+    .avatar-block {
+        /*margin: 0 6px 12px 6px;*/
+    }
+    #avatar {
+        width: 80px;
+        height: 80px;
+    }
+    .info-about {
+        font-size: 16px;
+        margin: 8px;
+        width: fit-content;
+    }
+    .ceo-coF {
+        font-size: 12px;
+        margin: 10px;
+    }
+    .name-surname {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    /* form block */
+    .input-block {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .side-nav {
+        position: absolute;
+        left: -240px;
+        height: 955px;
+        z-index: 100;
+    }
+    #menu-company, #hr-menu {
+        display: none;
+    }
+    .menu-ico, .close-menu {
+        display: block;
+    }
+    .avatar-block {
+        /*margin: 0 6px 6px 6px;*/
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .side-nav { height: 955px; }
+    .avatar-block {
+        /*margin: 0 6px 4px 6px;*/
+    }
+    .input-block {
+        margin: 10px 40px 40px 40px;
+        height: fit-content;
+        padding: 0 20px 20px 20px;
+    }
+    label {
+        font-size: 11px;
+    }
+    input[type=text] {
+        margin: 2px 5px 5px 5px;
+    }
+    .content-box-one {
+        /*height: 100%;*/
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    textarea {
+        height: 27px;
+    }
+    .header-box-one {
+        margin-bottom: 0;
+        position: relative;
+        bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* bio block */
+    .row-btn {
+        justify-content: center;
+    }
+    .info-block {
+        margin: 20px 0 45px 0;
+        width: 80%;
+        height: 230px;
+    }
+    .info-about {
+        font-size: 14px;
+        margin: 8px;
+    }
+    .avatar-block { /*margin: 0 6px 6px 6px;*/ }
+    .ceo-coF {
+        font-size: 12px;
+        margin: 5px;
+    }
+    .name-surname {
+        font-size: 16px;
+        margin: 5px;
+    }
+    .made-by {
+        font-size: 12px;
+    }
+}
