@@ -1,0 +1,57 @@
+.block-one__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 80px;
+}
+.block-one__img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.block-one__img img {
+    height: 660px;
+}
+.block-one__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10%;
+}
+.p-discount {
+    font-family: "Yellowtail-Regular", cursive;
+    color: #2577fd;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+.block-one__info h1 {
+    color: #1f2022;
+    font-family: "PlayfairDisplay-Regular", serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 12px;
+    
+}
+.p-collection {
+    color: #313639;
+    font-family: "PlayfairDisplay-Regular", serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+.shop-now-btn {
+    margin-top: 50px;
+    background-color: rgb(84, 84, 255);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 25px;
+    font-size: 18px;
+    text-decoration: none;
+}

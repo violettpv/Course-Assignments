@@ -21,9 +21,35 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     height: 100vh;
     font-family: "Poppins-Regular", sans-serif;
     color: black;
+}
+
+.block-one {
+    min-height: 700px;
+    background-color: rgb(191, 224, 249);
+    display: flex;
+    align-items: flex-end;
+}
+.block-two, .block-three, .block-four, .block-five {
+    background-color: white;
+}
+.block-two {
+    min-height: 700px;
+}
+.block-three {
+    min-height: 900px;
+}
+.block-four {
+    min-height: 900px;
+}
+.block-five {
+    min-height: 720px; 
+}
+.block-two, .block-three, .block-four, .block-five {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
