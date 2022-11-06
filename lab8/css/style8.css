@@ -46,7 +46,7 @@ body {
     min-height: 900px;
 }
 .block-five {
-    min-height: 720px; 
+    min-height: 800px; 
 }
 .block-two, .block-three, .block-four, .block-five {
     display: flex;
