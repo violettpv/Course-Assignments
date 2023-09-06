@@ -62,11 +62,12 @@ a {
     width: 70%;
 }
 .cat-pic1 {
-    width: 45%;
+    width: 100px;
     height: auto;
-    margin: 25px;
+    margin: 10px 0 0 10px;
 }
 .cat-pic2 {
-    width: 30%;
-    height: 90%;
+    width: 100px;
+    height: 30px;
+    margin: 0;
 }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полтава В., ІТ-04, Лаб 5, Варіант 110 (10)</title>
+    <meta  name="keywords" content="Полтава, Віолетта, ІТ-04">
+    <meta name="description" content="Лабораторна 2, Полтава Віолетта">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h3>Лабораторна робота № 2, ІТ-04 Полтава Віолетта, Варіант 110 (10)</h3>
+
+        <div id="task-1">
+            <div id="form-container">
+                <h3>Форма для заповнення:</h4>
+                <form id="myForm">
+                    <div class="form-group">
+                        <label for="fullname"></label>
+                        <input type="text" maxlength="32" id="fullname" placeholder="ПІБ: Кучерява О. О.">
+                    </div>
+                    <div class="form-group">
+                        <label for="group"></label>
+                        <input type="text" maxlength="5" id="group" placeholder="Група: ІТ-04">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"></label>
+                        <input type="text" maxlength="15" id="phone" placeholder="Телефон: 066-505-40-40">
+                    </div>
+                    <div class="form-group">
+                        <label for="address"></label>
+                        <input type="text" maxlength="32" id="address" placeholder="Адреса: м. Київ">
+                    </div>
+                    <div class="form-group">
+                        <label for="email"></label>
+                        <input type="text" maxlength="32" id="email" placeholder="E-mail: example@gmail.com">
+                    </div>
+                    <button type="button" id="confirm-btn" onclick="checkForm()" class="btn">Підтвердити</button>
+                </form>
+            </div> 
+            <div id="users-info">
+                <h3>Введені дані:</h5>
+                <p><b>ПІБ:</b> <span id="users-fullname"></span></p>
+                <p><b>Група:</b> <span id="users-group"></span></p>
+                <p><b>Телефон:</b> <span id="users-phone"></span></p>
+                <p><b>Адреса:</b> <span id="users-address"></span></p>
+                <p><b>E-mail:</b> <span id="users-email"></span></p>
+            </div>
+        </div>
+
+        <div id="task-2">
+            <div id="current-color">
+                <label for='color_tool'>Оберіть колір</label>
+                <input type="color" id="color_tool">
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
